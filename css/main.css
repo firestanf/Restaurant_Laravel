@@ -2429,10 +2429,59 @@ body.mobile-nav-active #mobile-nav-toggle{
 }
 .Search-Food input
 {
-   width:80%; 
-   margin-right:20px;
+   width:100%; 
+}
+.Search-Food .genric-btn
+{
+    width:90%;
+}
+.filter-btn
+{
+    border:1px solid green;
+    width:10%;
+    padding-top:1em;
+    color: #222;
+    font-size:2.2em !important;
 }
 .Search-title
 {
     margin-bottom:.5em;
+}
+.filter-menu
+{
+    Border:1px solid red;
+    display:inline-block;
+    padding-top:1em;
+    padding-left:.5em;
+    padding-bottom:1em;
+    padding-right:.5em;
+    width:100%;
+}
+.filter-menu > .filter-content
+{
+    Border:1px solid green;
+    width:30%;
+}
+.filter-content > h4
+{
+    margin-bottom:.2em;
+}
+.title-checkbox
+{
+    margin:0;
+    font-size:1.15em;
+}
+.filter-content .d-flex .primary-checkbox
+{
+    background: #d7d7d7;
+}
+.filter-content .d-flex .primary-checkbox input + label
+{
+    border: 1px solid #d7d7d7;
+}
+.filter-content ul li
+{
+    /* Border:1px solid green; */
+    padding-top:.3em;
+    padding-bottom:.3em;
 }
