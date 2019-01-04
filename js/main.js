@@ -42,6 +42,15 @@ $(document).ready(function(){
     },
     speed: 400
   });
+  $('.sf-with-ul').on('mouseenter mouseout', function(e) {
+    e.stopPropagation();
+  })
+  $('.sf-with-ul').on('click', function (e) {
+        $(".dropdown-menu").toggle(!$(".dropdown-menu").is(':visible'));
+    })
+ $('.menu-has-children').find('a').on('click', function (e) {
+        e.preventDefault();
+ })
 
   // Mobile Navigation
   if ($('#nav-menu-container').length) {
