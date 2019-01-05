@@ -2452,8 +2452,8 @@ body.mobile-nav-active #mobile-nav-toggle{
 .filter-menu
 {
     Border:1px solid red;
-    /* display:inline-block; */
-    display:none;
+    display:inline-block;
+    /* display:none; */
     padding-top:1em;
     padding-left:.5em;
     padding-bottom:1em;
@@ -2488,13 +2488,48 @@ body.mobile-nav-active #mobile-nav-toggle{
     padding-top:.3em;
     padding-bottom:.3em;
 }
+.pgn-left
+{
+    margin-right:1em;
+}
+.pgn-right
+{
+    margin-left:1em;
+
+}
 .pagination
 {
     text-align:center;
-    padding:0 auto;
-    Border:1px solid red;
+    /* Border:1px solid red; */
+    width:100%;
+    padding-top:1em;
+    padding-bottom:1em;
+    display:inline-block;
+    margin: 0 auto;
+
 }
-.pagination > li
+.pagination .genric-btn
 {
+    padding: 0 15px !important;
+    /* font-size:1.2em !important; */
+}
+
+.pagination > li
+{   
+    padding-top:.5em;
+    padding-bottom:.5em;
+    padding-left:.5em;
+    padding-right:.5em;
+    /* Border:1px solid red; */
+    font-weight:500;
+    color:#222;
+    cursor: pointer;
+    display:inline-block;
+    font-size:1.5em;
     
+    float:center;
+}
+.pagination > .selected
+{
+    color:#f42f2c;
 }
