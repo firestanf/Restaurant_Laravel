@@ -2429,11 +2429,13 @@ body.mobile-nav-active #mobile-nav-toggle{
 }
 .Search-Food input
 {
-   width:100%; 
+   /* width:100%;  */
+   width:70%;
 }
 .Search-Food .genric-btn
 {
-    width:90%;
+    /* width:90%; */
+    width:auto;
 }
 .filter-btn
 {
@@ -2450,7 +2452,8 @@ body.mobile-nav-active #mobile-nav-toggle{
 .filter-menu
 {
     Border:1px solid red;
-    display:inline-block;
+    /* display:inline-block; */
+    display:none;
     padding-top:1em;
     padding-left:.5em;
     padding-bottom:1em;
@@ -2484,4 +2487,14 @@ body.mobile-nav-active #mobile-nav-toggle{
     /* Border:1px solid green; */
     padding-top:.3em;
     padding-bottom:.3em;
+}
+.pagination
+{
+    text-align:center;
+    padding:0 auto;
+    Border:1px solid red;
+}
+.pagination > li
+{
+    
 }
