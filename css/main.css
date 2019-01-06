@@ -571,6 +571,9 @@ td,th{
 .section-bg{
     background:#f9fafc
 }
+
+
+
 @media (max-width: 767px){
     .no-flex-xs{
         display:block !important
@@ -1525,7 +1528,7 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom:14px;
     margin-bottom:30px !important;
 
-    border:1px solid green;
+    /* border:1px solid green; */
     position:fixed;
     left:0;
     top:0;
@@ -1598,7 +1601,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .nav-menu>li{
     float:left;
-    Border:1px solid green;
+    Border:1px solid transparent;
     display:inline-block;
     min-height: 30px;
     text-align:center;
@@ -1771,6 +1774,19 @@ h1,h2,h3,h4,h5,h6{
 #mobile-nav ul li{
     position:relative
 }
+#mobile-nav ul li .primary-btn 
+{
+    width: 50%;
+
+    line-height: 30px;
+    
+    text-align: center;
+    
+    position: relative;
+    
+    left: 10px;
+
+}
 #mobile-nav ul li a{
     color:#fff;
     font-size:13px;
@@ -1909,7 +1925,7 @@ body.mobile-nav-active #mobile-nav-toggle{
 .banner-area{
     background:url(../img/header-bg.jpg) right;
     background-size:cover;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 @media (max-width: 767.98px){
     .banner-area .fullscreen{
@@ -2439,7 +2455,7 @@ body.mobile-nav-active #mobile-nav-toggle{
 }
 .filter-btn
 {
-    border:1px solid green;
+    /* border:1px solid green; */
     width:10%;
     padding-top:1em;
     color: #222;
@@ -2449,21 +2465,27 @@ body.mobile-nav-active #mobile-nav-toggle{
 {
     margin-bottom:.5em;
 }
+.Search-Food i:hover
+{
+    color:red;
+}
 .filter-menu
 {
-    Border:1px solid red;
-    display:inline-block;
+    border: 1px solid rgba(111,117,152,0.3);
+    /* display:inline-block; */
     /* display:none; */
     padding-top:1em;
     padding-left:.5em;
     padding-bottom:1em;
     padding-right:.5em;
     width:100%;
+    display:flex;
+    align-items: flex-start;
 }
 .filter-menu > .filter-content
 {
-    Border:1px solid green;
-    width:30%;
+    /* Border:1px solid green; */
+    display:inline-block;
 }
 .filter-content > h4
 {
@@ -2484,9 +2506,7 @@ body.mobile-nav-active #mobile-nav-toggle{
 }
 .filter-content ul li
 {
-    /* Border:1px solid green; */
-    padding-top:.3em;
-    padding-bottom:.3em;
+
 }
 .pgn-left
 {
@@ -2532,4 +2552,133 @@ body.mobile-nav-active #mobile-nav-toggle{
 .pagination > .selected
 {
     color:#f42f2c;
+}
+.Loading-content
+{
+    /* Border:1px solid black; */
+}
+@media (max-width: 760px){
+    .filter-menu{
+        display:inline-block !important;
+    }
+    .Search-Food input
+    {
+        width: 100%;
+    }
+    .Search-Food .genric-btn
+    {
+        width:90%;
+    }
+    .filter-btn
+    {
+        font-size:1.5em !important;
+        padding-top: .5em !important;
+        padding-bottom: .1em !important;
+    }
+}
+
+/*Food-Info*/
+.Foodshowcase
+{
+
+}
+.modal-content
+{
+    padding:1.5em;
+    /* position: relative; */
+    top:4em;
+    border-radius:unset;
+    
+}  
+.modal-content  h2
+{
+
+ padding-bottom:.5em;
+ margin-left:.4em;
+}
+.modal-content > .img-fluid
+{
+    width:548.05px;
+    height:308.267px;
+}
+/*Food-Info*/
+
+.nav-menu  .primary-btn
+{
+    padding-right:1.5em !important;
+    padding-left:1.5em !important;
+    line-height: 2.3em;
+}
+.nav-menu
+{
+    display: flex;
+
+align-items: center;
+}
+
+.contact-info
+{
+    /* Border:1px solid black; */
+    font-size:3em;
+    margin-bottom:.6em;
+    color:black !important;
+}
+.map-content
+{
+    width:100%;
+    height:650px;
+}
+
+.info-one
+{
+    Border:1px solid red;
+}
+.info-two
+{
+    Border:1px solid red;
+    position: relative;
+}
+.info-two > .primary-btn
+{
+    position: absolute;
+    bottom: 0;
+    width:40%;
+    text-align: center;
+    padding: 0;
+    margin-left: auto;
+    margin-right:auto;
+}
+.nutrition-body
+{
+    margin-bottom:10em;
+}
+.share-body
+{
+    margin-bottom:1em;
+}
+.share-body ul
+{
+    display:inline-flex;
+}
+.share-body .genric-btn
+{
+    line-height:1em;
+    padding-top:.6em;
+    padding-bottom:.6em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    margin:.3em;
+}
+.share-body .btn-fb .genric-btn
+{
+    background-color:#3b5999;
+}
+.share-body .btn-fb .genric-btn:hover{
+    border:1px solid #3b5999;
+    color:#3b5999;
+    background-color:white;
+}
+.share-body .genric-btn .fa-facebook
+{
+    font-size:2em;
 }

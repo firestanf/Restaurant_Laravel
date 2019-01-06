@@ -39,17 +39,11 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="#home">Home</a></li>
-				          <li><a href="#dish">Dish</a></li>
-				          <li><a href="#chefs">Chefs</a></li>
-				          <li><a href="#blog">Blog</a></li>
-				          <li><a href="#contact">Contact</a></li>
-				          <li class="menu-has-children"><a href="">Pages</a>
-				            <ul>
-				              <li><a href="generic.html">Generic</a></li>
-				              <li><a href="elements.html">Elements</a></li>
-				            </ul>
-				          </li>
+				          <li><a href="">Our Menu</a></li>
+				          <li><a href="">Gallery</a></li>
+				          <li><a href="">Blog</a></li>
+				          <li><a href="#" class="primary-btn text-white text-uppercase">sign in</a></li>
+				   
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -222,78 +216,7 @@
 			<!-- End related Area -->	
 
 
-			<!-- Start team Area -->
-			<section class="team-area section-gap" id="chefs">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Meet Our Qualified Chefs</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row justify-content-center d-flex align-items-center">
-						<div class="col-md-3 single-team">
-						    <div class="thumb">
-						        <img class="img-fluid" src="img/t1.jpg" alt="">
-						        <div class="align-items-center justify-content-center d-flex">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-linkedin"></i></a>
-						        </div>
-						    </div>
-						    <div class="meta-text mt-30 text-center">
-							    <h4>Ethel Davis</h4>
-							    <p>Managing Director (Sales)</p>									    	
-						    </div>
-						</div>
-						<div class="col-md-3 single-team">
-						    <div class="thumb">
-						        <img class="img-fluid" src="img/t2.jpg" alt="">
-						        <div class="align-items-center justify-content-center d-flex">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-linkedin"></i></a>
-						        </div>
-						    </div>
-						    <div class="meta-text mt-30 text-center">
-							    <h4>Rodney Cooper</h4>
-							    <p>Creative Art Director (Project)</p>			    	
-						    </div>
-						</div>	
-						<div class="col-md-3 single-team">
-						    <div class="thumb">
-						        <img class="img-fluid" src="img/t3.jpg" alt="">
-						        <div class="align-items-center justify-content-center d-flex">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-linkedin"></i></a>
-						        </div>
-						    </div>
-						    <div class="meta-text mt-30 text-center">
-							    <h4>Dora Walker</h4>
-							    <p>Senior Core Developer</p>			    	
-						    </div>
-						</div>	
-						<div class="col-md-3 single-team">
-						    <div class="thumb">
-						        <img class="img-fluid" src="img/t4.jpg" alt="">
-						        <div class="align-items-center justify-content-center d-flex">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-linkedin"></i></a>
-						        </div>
-						    </div>
-						    <div class="meta-text mt-30 text-center">
-							    <h4>Lena Keller</h4>
-							    <p>Creative Content Developer</p>			    	
-						    </div>
-						</div>																		
-					</div>
-				</div>	
-			</section>
-			<!-- End team Area -->			
+			
 
 			<!-- start blog Area -->		
 			<section class="blog-area section-gap" id="blog">
@@ -375,12 +298,13 @@
 			<!-- Start Contact Area -->
 			<section class="contact-area" id="contact">
 				<div class="container-fluid">
-					<div class="row align-items-center d-flex justify-content-start">
+					<div class="row align-items-center d-flex justify-content-start" >
 						<div class="col-lg-6 col-md-12 contact-left no-padding">
-	      					<div style=" width:100%;
-	                height: 545px;" id="map"></div>
+	      					<div class="map-content" id="map"></div>
 						</div>
-						<div class="col-lg-4 col-md-12 pt-100 pb-100">
+
+						<div class=" col-lg-4 col-md-12 pt-100 pb-100">	
+							<h1 class="contact-info form-area">Give Us Your Feedback</h1>
 							<form class="form-area" id="myForm" action="mail.php" method="post" class="contact-form text-right">
 								<input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required="" type="text">
 								<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required="" type="email">
@@ -389,7 +313,9 @@
 								<div class="mt-10 alert-msg">
 								</div>
 							</form>
+
 						</div>
+
 					</div>
 				</div>
 			</section>
