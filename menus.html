@@ -30,9 +30,24 @@
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/loading.css">
     </head>
     <body ng-app="App">
 
+        <!-- modal-start -->
+        <div id="myModal" class="modal fade infofoodmodal" role="dialog">
+            <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+            <h2>California Grilled Veggie Sandwich</h2>
+            <img src="https://images.media-allrecipes.com/userphotos/720x405/1065998.jpg" alt="">
+
+            </div>
+        
+            </div>
+        </div>
+        <!-- modal-end -->
           <header id="header" id="home">
             <div class="container">
                 <div class="row align-items-center justify-content-between d-flex">
@@ -83,7 +98,7 @@
                             <input name="fname"  class="common-input" required="" type="text">
 
                             <a href="" class="filter-btn"><i class="fas fa-sliders-h"></i></a>
-                            <a href="#" class="genric-btn primary">Search</a>
+                            <a href="#" class="genric-btn primary" data-toggle="modal" data-target="#myModal">Search</a>
                         </div>
                         <div class="filter-menu container">
 
@@ -205,7 +220,17 @@
         
 
     
-
+        <!-- loading -->
+        <div class="loading-body">
+                <div class="spinner">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                      </div>
+        </div>
+        <!-- loading -->
 
 
 		
