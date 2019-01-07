@@ -1526,7 +1526,7 @@ h1,h2,h3,h4,h5,h6{
 #header{
     padding-top:14px;
     padding-bottom:14px;
-    margin-bottom:30px !important;
+    margin-bottom:40px !important;
 
     /* border:1px solid green; */
     position:fixed;
@@ -1774,6 +1774,7 @@ h1,h2,h3,h4,h5,h6{
 #mobile-nav ul li{
     position:relative
 }
+<<<<<<< HEAD
 #mobile-nav ul li .primary-btn 
 {
     width: 50%;
@@ -1786,6 +1787,20 @@ h1,h2,h3,h4,h5,h6{
     
     left: 10px;
 
+=======
+#mobile-nav ul li .genric-btn
+{
+   width:40%;
+   height:2em;
+   padding:0;
+   position:relative;
+   left:1em;
+}
+#mobile-nav ul li .genric-btn:hover
+{
+    color:#f42f2c;
+    line-height: .1em;
+>>>>>>> 177fb46296df689d158f7ba19b33dcaa4a0fd4ba
 }
 #mobile-nav ul li a{
     color:#fff;
@@ -2553,6 +2568,7 @@ body.mobile-nav-active #mobile-nav-toggle{
 {
     color:#f42f2c;
 }
+<<<<<<< HEAD
 .Loading-content
 {
     /* Border:1px solid black; */
@@ -2597,10 +2613,27 @@ body.mobile-nav-active #mobile-nav-toggle{
  margin-left:.4em;
 }
 .modal-content > .img-fluid
+=======
+
+/*Modal*/
+.infofoodmodal > .modal-dialog 
+{
+    max-width: calc(100% - 12em);
+
+}
+.infofoodmodal > .modal-dialog  >.modal-content
+{
+    border-radius: unset;
+    Padding:1em;
+}
+.infofoodmodal > .modal-dialog > 
+.modal-content > img
+>>>>>>> 177fb46296df689d158f7ba19b33dcaa4a0fd4ba
 {
     width:548.05px;
     height:308.267px;
 }
+<<<<<<< HEAD
 /*Food-Info*/
 
 .nav-menu  .primary-btn
@@ -2682,3 +2715,19 @@ align-items: center;
 {
     font-size:2em;
 }
+=======
+/*Modal*/
+
+/*nav-button*/
+.nav-menu .genric-btn
+{
+ padding-top:0 !important;
+ padding-bottom:0 !important;
+ padding-right:1.1em;
+ padding-left:1.1em;
+ font-weight:500;
+ position:relative;
+ bottom:.5em;
+}
+/*nav-button*/
+>>>>>>> 177fb46296df689d158f7ba19b33dcaa4a0fd4ba
