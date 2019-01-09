@@ -2725,9 +2725,8 @@ align-items: center;
 /*AUTH */
 .auth
 {
-    box-sizing: border-box;
+box-sizing: border-box;
 box-shadow: 0 2px 4px 0 rgba(181,181,181,.7);
-width: 360px;
 right: 10px;
 min-height: 550px;
 z-index: 1;
@@ -2739,7 +2738,54 @@ margin: 0 auto;
 margin-top:10em;
 /* max-width: 1050px;
 min-width: 320px; */
+}
+.Loginbody
+{
+    width: 360px;
+}
+.Registerbody
+{
+    width: 650px;
+}
+.auth form .notify
+{
+    /* Border:1px solid red; */
+    margin:0;
+    padding-left:1.5em;
+    padding-top:.2em;
+    margin-bottom:-1em;
+}
+.auth form .notify > .error
+{
+    color:#f42f2c;
+}
+.auth form .notify > .success
+{
+    color:#2cf42f ;
+}
 
+.auth form .agree 
+{
+   Border:1px solid transparent;
+   /* background-color: ; */
+   padding:0 20px; 
+   display: flex;   
+}
+.auth form .agree .confirm-text
+{ 
+  margin:0; 
+  width:90%;
+  font-size:1.1em;
+  line-height:1.6em;
+  cursor:pointer;
+}
+.auth form .agree .confirm-checkbox
+{   
+    width: 17px;
+    height: 17px;
+    margin-right:.5em;
+    margin-top:.2em;
+    border:1px solid #f42f2c;
 }
 
 .auth  .header
@@ -2766,8 +2812,18 @@ min-width: 320px; */
 }
 .auth form .footer .retrive
 {
-    float:right;
+    
     border: 1px solid black;
+}
+.Registerbody form .footer .retrive
+{
+    padding:0;
+    margin:0;
+    text-align:center;  
+}
+.Loginbody form .footer .retrive
+{
+    float:right;
 }
 .auth form .footer 
 {
