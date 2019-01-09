@@ -21,7 +21,8 @@
         CSS
         ============================================= -->
         <link rel="stylesheet" href="css/linearicons.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="css/spinner.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -34,20 +35,21 @@
     </head>
 
     <body ng-app="App">
-
-<<<<<<< HEAD
             <div class="modal fade" id="myModal" role="dialog">
-                    
-                <div class="modal-dialog" style="right:20em;">
+                <div class="order modal-dialog">
                     
                       <!-- Modal content-->
-                      <div class="modal-content" style="width:200% !important;">
+                      <div class="modal-content" >
                         <div class="row">
                                 <h2>California Grilled Veggie Sandwich</h2>
                         <div class="info-one col-md-6 col-sm-12">
                         
                         <img class="img-fluid" src="https://images.media-allrecipes.com/userphotos/720x405/232795.jpg" 
                         alt="">
+                        <ul class="ima">
+
+                        </ul>
+
                         </div>
                         <div class="info-two col-md-6 col-sm-12">
                             
@@ -58,40 +60,10 @@
                         <div class="share-body">
                         <h4>Share</h4>
                         
-=======
-        <!-- modal-start -->
-        <div id="myModal" class="modal fade infofoodmodal" role="dialog">
-            <div class="modal-dialog">
-        
-            <!-- Modal content-->
-            <div class="modal-content">
-            <h2>California Grilled Veggie Sandwich</h2>
-            <img src="https://images.media-allrecipes.com/userphotos/720x405/1065998.jpg" alt="">
-
-            </div>
-        
-            </div>
-        </div>
-        <!-- modal-end -->
-          <header id="header" id="home">
-            <div class="container">
-                <div class="row align-items-center justify-content-between d-flex">
-                  <div id="logo">
-                    <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
-                  </div>
-                  <nav id="nav-menu-container">
-                    <ul class="nav-menu">
-                      <li class="menu-active"><a href="#home">Home</a></li>
-                      <li><a href="#dish">Dish</a></li>
-                      <li><a href="#chefs">Chefs</a></li>
-                      <li><a href="#blog">Blog</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                      <li class="menu-has-children"><a href="">Pages</a>
->>>>>>> 177fb46296df689d158f7ba19b33dcaa4a0fd4ba
                         <ul>
                           <li class="btn-fb">
                               <a href="#" class="genric-btn primary circle">
-                              <i class="fa fa-faceb"></i></a>
+                                <i class="fa fa-facebook"></i></a>
                           </li>  
                           <li class="btn-fb">
                                 <a href="#" class="genric-btn primary circle">
@@ -116,7 +88,6 @@
                     </div>
                       
                     </div>
-
             </div>
 
             <header id="header" id="home">
@@ -130,16 +101,18 @@
                               <li><a href="">Our Menu</a></li>
                               <li><a href="">Gallery</a></li>
                               <li><a href="">Blog</a></li>
-                              <li><a href="#" class="primary-btn text-white text-uppercase">sign in</a></li>
+                              <li><a href="#" class="primary-btn text-white text-uppercase" data-toggle="modal" data-target="#loginmodal">sign in</a></li>
                        
                             </ul>
                           </nav><!-- #nav-menu-container -->		    		
                         </div>
                     </div>
-                  </header><!-- #header -->
+                  </header>
+            <!-- #header -->
 
 			<!-- Start banner Area -->
-			<section class="generic-banner relative">						
+			<section class="generic-banner relative">
+                <img class="our-menu-back" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg" alt="">						
 				<div class="container">
 					<div class="row height align-items-center justify-content-center">
 						<div class="col-lg-10">
@@ -162,12 +135,15 @@
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content pb-60 col-lg-8">
                         <h3 class="Search-title">Search Here</h3>
-                        <div class="title text-center Search-Food">
+                        <p class="title text-center Search-Food">
                             <input name="fname"  class="common-input" required="" type="text">
 
-                            <a href="" class="filter-btn"><i class="fas fa-sliders-h"></i></a>
-                            <a href="#" class="genric-btn primary" data-toggle="modal" data-target="#myModal">Search</a>
-                        </div>
+                  
+                            <a href="" class="filter-btn">
+                                <i class="fas fa-sliders-h"></i>
+                            </a>
+                            <a href="#" class="genric-btn primary radius" data-toggle="modal" data-target="#myModal">Search</a>
+                        </p>
                         <div class="filter-menu container">
 
                             <!-- type -->
