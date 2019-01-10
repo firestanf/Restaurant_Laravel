@@ -1590,7 +1590,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .nav-menu ul{
     position:absolute;
-    display:none;
+    /* display:none; */
     top:100%;
     left:0;
     z-index:99
@@ -1599,27 +1599,55 @@ h1,h2,h3,h4,h5,h6{
     position:relative;
     white-space:nowrap
 }
-.nav-menu>li{
+
+.nav-menu .testnotif .notif-only-web-full-test
+{
+    min-width:300px;
+    padding-top:1em;
+    padding-left:1em;
+    padding-bottom:1em;
+    right:50px;
+}
+.testnotif .see-all-btn
+{
+ margin-top:.5em;
+}
+.testnotif .see-all-btn >.genric-btn
+{
+    width:100%;
+    line-height: 1em;
+    font-size:1.08em;
+    padding:.5em 0;
+}
+.notif-only-web-full-test .notif-title
+{
+    margin-bottom:.2em;
+    margin-top:.2em;
+}
+/* .nav-menu>li{
     float:left;
     Border:1px solid transparent;
     display:inline-block;
     min-height: 30px;
     text-align:center;
-}
-.nav-menu li:hover>ul,.nav-menu li.sfHover>ul{
+} */
+/* .nav-menu li:hover>ul,.nav-menu li.sfHover>ul{
     display:block
-}
+} */
 .nav-menu ul ul{
     top:0;
-    left:100%
+
 }
-.nav-menu ul li{
+
+/* .nav-menu ul li{
     min-width:180px;
     text-align:left;
     
-}
+} */
+
+
 /*nav-menu-v1*/
-.sf-arrows .sf-with-ul{
+/* .sf-arrows .sf-with-ul{
     padding-right:30px
 }
 .sf-arrows .sf-with-ul:after{
@@ -1641,7 +1669,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .sf-arrows ul .sf-with-ul:after{
     content:"\f105"
-}
+} */
 #nav-menu-container{
     margin:0
 }
@@ -2867,10 +2895,13 @@ min-width: 320px; */
     margin-left:-.5em;
     
 }
-.testnotif > a,i
+.testnotif > .title,.symblo
 {
     color:#f32f2b;
     font-weight:600;
 }
-
+.testnotif >.notif-only-web-full
+{
+    
+}
 /* nav v2 */
