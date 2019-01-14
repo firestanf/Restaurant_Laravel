@@ -28,6 +28,9 @@
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/booking.css">
+
+
     </head>
     <body>
       <header id="header" id="home">
@@ -79,8 +82,6 @@
                       <img src="https://yt3.ggpht.com/-FpoBOVwSiE0/AAAAAAAAAAI/AAAAAAAAAAA/Yf-SnwkfdQ4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="">
                       <span>MyClark Youser</span>  </a>
                     
-
-
                   </li>
                   
 
@@ -131,7 +132,61 @@
 
       </div> -->
 		
+      <section class="booking-body">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-60 col-lg-8">
+                    
+                  <div class="title text-center">
+                        <h1 class="mb-10">Book A Table</h1>
+                        <p>Who are in extremely love with eco friendly system.</p>
+                  </div>
 
+                  <h3>See You Soon</h3>
+
+                  <article>
+                     Your Booking Request Has Been Confirm. <br>We Look Foward to seeing you
+                  </article>
+
+                  
+                    <div class="des-data row">
+                      
+                      <div class="col-md-6">
+                        <p>Name</p>
+                        <h4>Nate Wright</h4>
+                      </div>
+
+                      <div class="col-md-6">
+                        <p>Time</p>
+                        <h4>04:30 AM</h4>
+                      </div>
+
+                      <div class="col-md-6">
+                        <p>Date</p>
+                        <h4>20 January 2018</h4>
+                      </div>
+
+                      <div class="col-md-6">
+                        <p>Number Of People</p>
+                        <h4>8 People</h4>
+                      </div>
+                      <div class="col-md-12">
+                          <a href="#" class="genric-btn primary radius">Primary</a>
+                      </div>
+
+                    </div>
+
+                  
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+      </section>
 
         <script src="js/vendor/jquery-2.2.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -149,5 +204,20 @@
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>				
         <script src="js/main.js"></script>	
+
+
+        <script>
+        var max = 17,
+    min = 4,
+    step = 1,
+    output = $('#output').text(min);
+
+  $("#range-slider")
+      .attr({'max': max, 'min':min, 'step': step,'value': String(min)})
+      .on('input change', function() {
+      
+          output.text(this.value);
+      });
+        </script>
     </body>
 </html>

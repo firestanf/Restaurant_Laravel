@@ -1,0 +1,158 @@
+.booking-body
+{
+    Border:1px solid red;
+    margin-top:5em;
+}
+.booking-input
+{
+    Border:1px solid green;
+}
+
+
+/*calendar v1*/
+
+.month {
+    padding: .5em .5em;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    align-items: center;
+    width:100%;
+    border:1px solid red;
+  }
+  
+  .month ul li {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border:1px solid red;
+    margin:0 .5em;
+  }
+  .days li span:hover
+  {
+    background: #1abc9c;
+    line-height: 2em;
+    padding: 10px 18px !important;
+    color: white !important;
+    border-radius:50%;
+    cursor: pointer;
+  }
+  
+  .month .genric-btn{
+    padding: 0 15px !important;
+    font-size:1em;
+  } 
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    /* background-color: #ddd; */
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+  
+  .days {
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    min-height:1em;
+    line-height:3em;
+    /* margin-bottom: 5px; */
+    font-size:1.2em ;
+    color: #777;
+    border: 1px solid transparent;
+  }
+  
+  .days li .active {
+    background: #1abc9c;
+    line-height: 2em;
+    padding: 10px 20px !important;
+    color: white !important;
+    border-radius:50%;
+    cursor: pointer;
+  }
+
+  .pick-time  .input-range
+  {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items:stretch;
+  }
+  .pick-time  .input-range input
+  {
+    border: 1px solid red;
+    width:100%;
+  }
+  .pick-time  .input-range output
+  {
+   font-size:3em;
+    line-height:1em;
+  }
+
+  /*confirm booking*/
+  .des-data
+  {
+   border:1px solid  #666; 
+   margin-top:1em;
+  }
+
+  .des-data p
+  {
+    margin:0;
+    font-weight:500;
+
+  } 
+  .des-data h4
+  {
+    margin:0;
+  } 
+
+  /*confirm booking*/
+
+  /*Move to dashboard*/
+  .btn-option
+  {
+    border: 1px solid red;
+  }
+  .btn-option .genric-btn
+  {
+    line-height:2.5em;
+    padding:2em 0;
+    width:100%;
+  }
+  .btn-option .genric-btn p, .btn-option .genric-btn i
+  {
+    margin:0;
+    font-size:2em;
+  }
+  .select-content
+  {
+    border: 1px solid red;
+  }
+  .select-content .filter-food
+  {
+    border: 1px solid blue;
+  }
+  .select-content .content-food
+  {
+    border: 1px solid cyan;
+  }
+  /*Move to dashboard*/
+

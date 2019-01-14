@@ -2905,3 +2905,116 @@ min-width: 320px; */
     
 }
 /* nav v2 */
+
+/*user board*/
+.user-board
+{
+    margin:0 10em;
+    margin-top:5em;
+    border:1px solid black !important;
+}
+.user-board > header #logo
+{
+    margin-top:1.5em;
+    margin-left:1.5em;
+    margin-right:1.5em;
+    margin-bottom:1.5em;
+}
+.user-board > header
+{
+    display:flex;
+    flex-direction:column;
+    border:1px solid black !important;
+}
+
+.user-board > header ul
+{
+    border:1px solid black !important;
+    margin-left:1em;
+    margin-right:1em;
+    margin-bottom:1.5em;
+}
+
+.user-board > header .nav-entity
+{
+    border:1px solid black !important;
+    font-size:1.5em;
+    padding:.5em;
+}
+
+.nav-entity:nth-child(2),
+.nav-entity:nth-child(3),
+{
+
+}
+.user-board > header .nav-entity > i
+{
+    margin-right:.5em;
+}
+.user-board > .main
+{
+    border:1px solid black !important;
+}
+.user-board > .main > h3
+{
+    margin-top:1em;
+    margin-left:1.5em;
+    margin-right:1.5em;
+    margin-bottom:1.5em;
+}
+/*user board*/
+
+/*show-order*/
+.mycart-body
+{
+    border:3px solid green;
+    position: fixed;
+    bottom:0;
+    right:2em;
+    width:25em;
+}
+.mycart-body > header
+{
+    padding:1em;
+    width:100%;
+}
+.mycart-body > header p
+{
+    margin:0;
+    width:100%;
+}
+.mycart-body > header p .tlt
+{
+    font-weight:500;
+}
+.mycart-body > header p .tlt
+{
+    float:left;
+}
+.mycart-body > header p .tot-items
+{
+    border:1px solid red;
+    width:.5em;
+    height:.5em;
+    padding-left:.4em;
+    padding-right:.4em;
+    /* padding-top:.2em;
+    padding-bottom:.2em; */
+    line-height:1px;
+    border-radius: 25%;
+}
+.mycart-body > ul
+{
+    border:1px solid red; 
+}
+.mycart-body > ul > li
+{
+    border:1px solid green;
+}
+.mycart-body >.primary
+{
+    width: 70%;
+    margin-left:.5em;
+    margin-right:.5em;
+}
+/*show-order*/
