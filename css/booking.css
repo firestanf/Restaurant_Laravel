@@ -6,6 +6,9 @@
 .booking-input
 {
     Border:1px solid green;
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
 }
 
 
@@ -32,17 +35,7 @@
     letter-spacing: 3px;
     border:1px solid red;
     margin:0 .5em;
-  }
-  .days li span:hover
-  {
-    background: #1abc9c;
-    line-height: 2em;
-    padding: 10px 18px !important;
-    color: white !important;
-    border-radius:50%;
-    cursor: pointer;
-  }
-  
+  }  
   .month .genric-btn{
     padding: 0 15px !important;
     font-size:1em;
@@ -78,15 +71,28 @@
     border: 1px solid transparent;
   }
   
-  .days li .active {
-    background: #1abc9c;
-    line-height: 2em;
-    padding: 10px 20px !important;
-    color: white !important;
+  .days li div {
+    background: transparent;
+    line-height: 45px;
+    width:45px;
+    height:45px;
+    color: black;
     border-radius:50%;
+    margin:auto;
     cursor: pointer;
   }
+ .days li .active {
+   background: purple;
+  }
+  .days li div:hover
+  {
+    color:blue;
+  }
 
+.pick-date
+{
+
+}
   .pick-time  .input-range
   {
     border: 1px solid red;
@@ -95,11 +101,33 @@
     width:100%;
     align-items:stretch;
   }
-  .pick-time  .input-range input
+  .pick-time .input-range input
   {
     border: 1px solid red;
     width:100%;
   }
+/*Make range slider invisible*/
+
+/*Make range slider invisible*/
+
+
+  #range-slider::-moz-range-thumb {
+    /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+    border: 1px solid rgb(244, 47, 44);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: rgb(244, 47, 44);
+    cursor: pointer;
+  }
+  #range-slider::-moz-range-track {
+    width: 100%;
+    height: .15em;
+    cursor: pointer;
+    background:#666;
+    border-radius: 3px;
+  }
+
   .pick-time  .input-range output
   {
    font-size:3em;
@@ -110,7 +138,7 @@
   .des-data
   {
    border:1px solid  #666; 
-   margin-top:1em;
+   margin-top:.5em;
   }
 
   .des-data p
@@ -123,6 +151,17 @@
   {
     margin:0;
   } 
+  .des-data  .confirm-btn
+  {
+    Text-Transform:uppercase;
+    font-weight:600;
+    font-size:1.1em !important;
+    padding-top:1px;
+    padding-bottom:1px;
+    padding-left:15px;
+    padding-right:15px;
+    margin-top:.5em;
+  }
 
   /*confirm booking*/
 
@@ -156,3 +195,254 @@
   }
   /*Move to dashboard*/
 
+  /*booking content*/
+  .booking-content
+  {
+
+  }
+  .booking-content .button-container .genric-btn
+  {
+    margin-top:.5em;
+    margin-bottom:.5em;
+    font-size:1.2em;
+    width:100%;
+  }
+  .booking-content  .title
+  {
+    border:1px solid red;
+  }
+  .booking-content .message
+  {
+    line-height:1.5em;
+    font-size:1.1em;
+    font-weight:400;
+    /* font-kerning:auto; */
+    /* letter-spacing: 1px; */
+    margin:0;
+  }
+/*booking content*/
+
+
+/*checked hamb*/
+
+#mobile-nav-toggle .hamb:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-8px, -20px);
+  background: #232323;
+}
+#mobile-nav-toggle .hamb:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#mobile-nav-toggle .hamb:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, 9px);
+}
+
+#mobile-nav-toggle .hamb:checked ~ ul
+{
+  transform: none;
+}
+#mobile-nav-toggle .hamb
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+#mobile-nav-toggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+/*checked hamb*/
+.profile-edit 
+{
+  Border:1px solid red;
+  margin-top:.2em;
+}
+.profile-edit > .img-section
+{
+  /* display:flex;
+  align-items:center; */
+}
+.profile-edit > .img-section p
+{
+  font-size:.9em;
+  font-weight:400;
+  position:relative;
+  top:.5em;
+}
+.profile-edit > .img-section > img
+{
+  border-radius:50%;
+}
+
+.profile-edit > .text-body
+{
+  Border:1px solid red;
+  /* display:flex; */
+  line-height:1em;
+}
+.profile-edit > .text-body .text-index
+{
+
+}
+.profile-edit >.text-body .text-content
+{
+  display:flex;
+  align-items:center;
+  margin-top:.5em;
+  margin-bottom:.5em;
+}
+
+.profile-edit > .text-body > section
+{
+  float:left;
+  /* width:60%!important; */
+  Border:1px solid;
+  overflow:hidden;
+}
+.profile-edit > .text-body .text-content >.genric-btn
+{
+  padding:0;
+  line-height: 1em;
+  padding:.5em;
+  font-weight:600;
+
+  text-transform: uppercase;
+  margin-left:.6em;
+}
+.profile-edit > .text-body >.genric-btn
+{
+  float:right;
+  line-height: 1em;
+  padding-top:.8em;
+  padding-bottom:.8em;
+  padding-left:1em;
+  padding-right:1em;
+  font-weight:600;
+  font-size:1.08em;
+  text-transform: uppercase;
+  position:relative;
+  top:.6em;
+}
+.save-btn > .genric-btn
+{
+  line-height: 1em;
+  padding-top:.8em;
+  padding-bottom:.8em;
+  padding-left:1em;
+  padding-right:1em;
+  font-weight:600;
+  font-size:1.08em;
+  text-transform: uppercase;
+  width:100%;
+}
+/**/
+
+/*Order Info*/
+.order-body
+{
+
+}
+.order-body > .progress-line-body
+{
+  border: 1px solid transparent;
+
+
+  /* background-color: white; */
+}
+.progress-line-body > .progress-text
+{
+  font-weight:500;
+  width:10px;
+
+}
+.progress-line-body > .progress-circle
+{
+  background-color:blue;
+}
+.progress-line-body > .progress-line
+{
+  stroke:black;
+  stroke-width:3px;
+}
+.Order-detail
+{
+  border:1px solid red;
+}
+.Order-detail > .tabs-body
+{
+  display:flex;
+  margin-top:.3em;
+}
+.Order-detail >.Order-detail-food
+{
+
+}
+.detail-food-list > li
+{
+
+}
+.Order-detail-corier
+{
+
+}
+.Order-detail-corier > .driver-info
+{
+  Border:1px solid red;
+}
+.Order-detail-corier > .driver-info > ul >li
+{
+  
+}
+.driver-info > ul >li >p
+{
+  margin:0;
+}
+.driver-info > ul >li >.title
+{
+
+}
+.driver-info > ul >li >.data
+{
+  
+}
+
+.Order-detail-corier > .driver-info > img
+{
+  border-radius:50%;
+}
+.Order-detail-corier > .maps
+{
+  Border:1px solid red;
+}
+
+
+/*Order Info*/

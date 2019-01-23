@@ -14,7 +14,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Navbar_dev</title>
+    <title>Delivery progress</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
         <!--
@@ -95,155 +95,90 @@
               </nav>		    		
             </div>
         </div>
-      </header>		
+      </header>	
   	
-        <!-- End banner Area --> 
 
-      <!-- <div class="user-board row">
- 
-        <header class="col-md-3">
-          <div id="logo">
-            <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
-          </div>
-
-          <ul>
-            <li class="nav-entity">
-              <i class="fas fa-home"></i>
-              <span>Home</span>
-            </li>
-            <li class="nav-entity">
-                <i class="fas fa-landmark"></i>
-                <span>History</span>
-            </li>
-            <li class="nav-entity">
-                <i class="fas fa-cogs"></i>
-                <span>Setting</span>
-            </li>
-            <li class="nav-entity">
-                <i class="fas fa-sign-out-alt"></i>
-                <span>Logout</span>
-            </li>
-          </ul>
-        </header>
-        
-        <div class="main col-md-9">
-          <h3>Home</h3>
-          
-        </div>
-
-      </div> -->
-		
       <section class="booking-body">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="menu-content pb-60 col-lg-11" style="Border:1px solid red;">
-                <h3>Checkout</h3>
-                <div class="row">
-                <ul class="checkout-body col-lg-7">
-                    <li class="checkout-item">
-                        
-                       <div class="checkout-item-info ">
-                         <img src="file:///opt/lampp/htdocs/project/Restaurant_Laravel/img/d1.jpg" 
-                         alt="" class="img-fluid">
-                         <section>
-                             <p>Bread Fruit Cheese Sandwich</p>
-                             <p>Rp 50.000</p>
+            <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="order-body pb-60 col-lg-8" style="Border:1px solid red;">
+                            <h1>Delivery Status</h1>
+                            <h4>Order Number: 1273071204</h4>
 
-                             <div class="product-adddel">
-                                <a class="genric-btn primary">
-                                     <i class="fas fa-minus"></i>
-                                </a>
-                                <p class="tot-item">200</p>
-                                <a class="genric-btn primary">
-                                     <i class="fas fa-plus"></i>
-                                </a>
-                             </div>
-                             
-                         </section>
 
-                        </div>
-                        <div class="checkout-checkbox-item-delete">
-                            <a class="genric-btn primary">
-                                <i class="fas fa-trash"></i>
-                           </a>
-                        </div>
+                           
+                           <svg  class="progress-line-body" preserveAspectRatio="xMinYMin slice"viewBox="0 0 750 70" width="750" height="70">
+                                <text x="10" y="50" class="progress-text">
+                                    Confirming Order
+                                </text>
+                                <circle cx="15" cy="20" r="5"  class="progress-circle"/>
+                                <line x1="15" y1="20" x2="200" y2="20" class="progress-line"/>
+                                
+                                <circle cx="200" cy="20" r="5"  class="progress-circle"/>
+                                <text x="195" y="50" class="progress-text">
+                                        Order Being Made
+                                </text>
+                                <line x1="195" y1="20" x2="400" y2="20" class="progress-line"/>
+                                
+                                <circle cx="400" cy="20" r="5"  class="progress-circle"/>
+                                <text x="395" y="50" class="progress-text">
+                                        Food On Delivery
+                                </text>
+                                <line x1="395" y1="20" x2="600" y2="20" class="progress-line"/>
+                                
+                                <circle cx="595" cy="20" r="8"  class="progress-circle"/>
+                                <text x="591" y="50" class="progress-text">
+                                        Food Recieved
+                                </text>
+                            </svg>
 
-                    </li>
+                            <section class="Order-detail">
+                            
+                            <article class="Order-detail-food">
 
-                    <li class="checkout-item">
-                        
-                        <div class="checkout-item-info ">
-                          <img src="file:///opt/lampp/htdocs/project/Restaurant_Laravel/img/d1.jpg" 
-                          alt="" class="img-fluid">
-                          <section>
-                              <p>Bread Fruit Cheese Sandwich</p>
-                              <p>Rp 50.000</p>
- 
-                              <div class="product-adddel">
-                                 <a class="genric-btn primary">
-                                      <i class="fas fa-minus"></i>
-                                 </a>
-                                 <p class="tot-item">200</p>
-                                 <a class="genric-btn primary">
-                                      <i class="fas fa-plus"></i>
-                                 </a>
-                              </div>
+                              <ul class="detail-food-list">
+                                <li>
+
+                                </li>
+                              </ul>
+                            </article>
+
+
+                            <article class="Order-detail-corier row">
                               
-                          </section>
- 
-                         </div>
- <!-- 
-                         <div class="checkout-item-total">
- 
- 
- 
-                         </div> -->
- 
-                         <div class="checkout-checkbox-item-delete">
-                             <a class="genric-btn primary">
-                                 <i class="fas fa-trash"></i>
-                            </a>
-                         </div>
- 
-                     </li>
+                              <div class="driver-info col-md-6">
+                                  <img src="https://yt3.ggpht.com/-FpoBOVwSiE0/AAAAAAAAAAI/AAAAAAAAAAA/Yf-SnwkfdQ4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="">
+                                  <ul>
+                                    <li>
+                                      <p class="title">Name</p>
+                                      <p class="data">Lima Beans</p>
+                                    </li>
+                                    <li>
+                                        <p class="title">Vehichle Plate</p>
+                                        <p class="data">B 123 BN</p>
+                                    </li>
+                                    <li>
+                                        <p class="title">Destination</p>
+                                        <p class="data">Addres Here</p>
+                                    </li>
+                                  </ul>
+                              </div>
 
-                     
+                              <div class="maps col-md-6">
+                                asdqw
+                              </div>
 
+                            </article>
 
-                </ul>
+                            </section>
 
-                <div class="total-checkout-body col-lg-5 ">
-                  
-                  <div class="total-price">
-                    <p class="title">Total Price</p>
-                    <p class="price">Rp 50.000</p>
-                  </div>
-
-                  <div class="address">
-                  <p class="title">Address</p>
-                  <textarea class="single-textarea" 
-                  required=""></textarea>
-                  </div>
-
-                  <div class="checkout">
-                    <a class="genric-btn primary checkout-btn radius">
-                        Order
-                    </a>  
-                </div>
-
-                </div>
-
-              </div>
-
-
-                </div>
+                        </div>
+                    </div>
             </div>
-        </div>
-
-
-
-
       </section>
+
+		
+
 
 
         <script src="js/vendor/jquery-2.2.4.min.js"></script>

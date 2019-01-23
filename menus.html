@@ -40,13 +40,22 @@
                       <!-- Modal content-->
                       <div class="modal-content" >
                         <div class="row">
-                                <h2>California Grilled Veggie Sandwich</h2>
+                            <h2>California Grilled Veggie Sandwich</h2>
                         <div class="info-one col-md-6 col-sm-12">
                         
                         <img class="img-fluid" src="https://images.media-allrecipes.com/userphotos/720x405/232795.jpg" 
                         alt="">
-                        <ul class="ima">
-
+                        
+                        <h4 class="pt-10 ">Nutrition Info</h4>
+                        <ul class="nu-list">
+                            <li>
+                                <p class="title">Calories</p>
+                                <p class="data">950</p>
+                            </li>
+                            <li>
+                                <p class="title">Total Fat</p>
+                                <p class="data">62g</p> 
+                            </li>
                         </ul>
 
                         </div>
@@ -56,6 +65,19 @@
                                  voluptas architecto tempore esse ratione suscipit mollitia quia nihil nisi in, 
                                  laudantium consectetur obcaecati eaque repudiandae, hic laborum libero cumque.</p>
                         
+                                 <!-- <div class="nutrition-body">
+                                    <h4>Nutrition Info</h4>
+                                    <ul class="nu-list">
+                                        <li>
+                                            <p class="title">Calories</p>
+                                            <p class="data">950</p>
+                                        </li>
+                                        <li>
+                                            <p class="title">Total Fat</p>
+                                            <p class="data">62g</p> 
+                                        </li>
+                                    </ul>
+                                </div> -->
                         <div class="share-body">
                         <h4>Share</h4>
                         
@@ -76,9 +98,15 @@
 
                         </div>
 
-                        <div class="nutrition-body">
-                        <h4>Nutrition Info</h4>
-                        </div>
+                        <div class="product-adddel">
+                                <a class="genric-btn primary">
+                                     <i class="fas fa-minus"></i>
+                                </a>
+                                <p class="tot-item">200</p>
+                                <a class="genric-btn primary">
+                                     <i class="fas fa-plus"></i>
+                                </a>
+                             </div>
 
                             <a href="#" class="primary-btn text-white text-uppercase">Add To Cart</a>
                         </div>
@@ -132,7 +160,7 @@
 
 
                 <div class="row d-flex justify-content-center">
-                    <div class="menu-content pb-60 col-lg-8">
+                    <div class="menu-content pb-30 col-lg-8">
                         <h3 class="Search-title">Search Here</h3>
                         <p class="title text-center Search-Food">
                             <input name="fname"  class="common-input" required="" type="text">
@@ -145,68 +173,75 @@
                         </p>
                         <div class="filter-menu container">
 
-                            <!-- type -->
-                            <div class="filter-content col-sm-12 col-md-4">
-                                <h4>Type</h4>
-                                <ul>
-                                    <li class="d-flex justify-content-between">
-                                                <p class="title-checkbox">Non-Vegeterian</p>
+                                <!-- type -->
+                                <div class="filter-content col-sm-12 col-md-4">
+                                    <h4>Type</h4>
+                                    <ul>
+                                        <li class="d-flex justify-content-between">
+                                                    <p class="title-checkbox">Non-Vegeterian</p>
+                                                    <div class="primary-checkbox">
+                                                        <input type="checkbox" id="nvg-checkbox">
+                                                        <label for="nvg-checkbox"></label>
+                                                    </div>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <p class="title-checkbox">Vegeterian</p>
+                                            <div class="primary-checkbox">
+                                                <input type="checkbox" id="vg-checkbox">
+                                                <label for="vg-checkbox"></label>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                                <p class="title-checkbox">Drink</p>
                                                 <div class="primary-checkbox">
-                                                    <input type="checkbox" id="nvg-checkbox">
-                                                    <label for="nvg-checkbox"></label>
+                                                    <input type="checkbox" id="drink-checkbox">
+                                                    <label for="drink-checkbox"></label>
                                                 </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-										<p class="title-checkbox">Vegeterian</p>
-										<div class="primary-checkbox">
-											<input type="checkbox" id="vg-checkbox">
-											<label for="vg-checkbox"></label>
-										</div>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-                                            <p class="title-checkbox">Drink</p>
-                                            <div class="primary-checkbox">
-                                                <input type="checkbox" id="drink-checkbox">
-                                                <label for="drink-checkbox"></label>
-                                            </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-                                            <p class="title-checkbox">Dessert</p>
-                                            <div class="primary-checkbox">
-                                                <input type="checkbox" id="desrt-checkbox">
-                                                <label for="desrt-checkbox"></label>
-                                            </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- type -->
-
-                            <!-- if Dish -->
-                            <div class="filter-content col-sm-12 col-md-4">
-                                <h4>Type Of Food</h4>
-                                <ul>
-                                    <li class="d-flex justify-content-between">
-                                                <p class="title-checkbox">Non-Vegeterian</p>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                                <p class="title-checkbox">Dessert</p>
                                                 <div class="primary-checkbox">
-                                                    <input type="checkbox" id="nvg-checkbox">
-                                                    <label for="nvg-checkbox"></label>
+                                                    <input type="checkbox" id="desrt-checkbox">
+                                                    <label for="desrt-checkbox"></label>
                                                 </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-										<p class="title-checkbox">Vegeterian</p>
-										<div class="primary-checkbox">
-											<input type="checkbox" id="vg-checkbox">
-											<label for="vg-checkbox"></label>
-										</div>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-                                            <p class="title-checkbox">Drink</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- type -->
+    
+                                <!-- if Dish -->
+                                <div class="filter-content col-sm-12 col-md-4">
+                                    <h4>Type Of Food</h4>
+                                    <ul>
+                                        <li class="d-flex justify-content-between">
+                                                    <p class="title-checkbox">Non-Vegeterian</p>
+                                                    <div class="primary-checkbox">
+                                                        <input type="checkbox" id="nvg-checkbox">
+                                                        <label for="nvg-checkbox"></label>
+                                                    </div>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <p class="title-checkbox">Vegeterian</p>
                                             <div class="primary-checkbox">
-                                                <input type="checkbox" id="drink-checkbox">
-                                                <label for="drink-checkbox"></label>
+                                                <input type="checkbox" id="vg-checkbox">
+                                                <label for="vg-checkbox"></label>
                                             </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                                <p class="title-checkbox">Drink</p>
+                                                <div class="primary-checkbox">
+                                                    <input type="checkbox" id="drink-checkbox">
+                                                    <label for="drink-checkbox"></label>
+                                                </div>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                                <p class="title-checkbox">Dessert</p>
+                                                <div class="primary-checkbox">
+                                                    <input type="checkbox" id="desrt-checkbox">
+                                                    <label for="desrt-checkbox"></label>
+                                                </div>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
                                             <p class="title-checkbox">Dessert</p>
                                             <div class="primary-checkbox">
                                                 <input type="checkbox" id="desrt-checkbox">
@@ -220,17 +255,10 @@
                                             <label for="desrt-checkbox"></label>
                                         </div>
                                 </li>
-                                <li class="d-flex justify-content-between">
-                                    <p class="title-checkbox">Dessert</p>
-                                    <div class="primary-checkbox">
-                                        <input type="checkbox" id="desrt-checkbox">
-                                        <label for="desrt-checkbox"></label>
-                                    </div>
-                            </li>
-                                </ul>
+                                    </ul>
+                                </div>
+    <!-- if Dish -->
                             </div>
-<!-- if Dish -->
-                        </div>
                     </div>
                 </div>	
 <!-- data -->
