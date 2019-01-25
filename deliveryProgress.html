@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="css/linearicons.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="css/nice-select.css">			
         <link rel="stylesheet" href="css/magnific-popup.css">
@@ -132,46 +133,143 @@
                                 </text>
                             </svg>
 
+                            <section class="order-log">
+                              <h4>Order Log</h4>
+
+                              <div class="boxes">
+                                  <div class="box">
+                                    <span class="icon">Confirming Order</span>
+                                  </div>
+                                  <div class="box">
+                                    <span class="info">Trying to veryfy your order shortly by phone</span>  
+                                  </div>
+                                  <div class="box">
+                                      <span class="timestamp">2017-07-04 13:23:55</span>
+                                  </div>
+                                </div>
+
+                              <div class="boxes">
+                                  <div class="box">
+                                    <span class="icon">Order Being Made</span>
+                                  </div>
+                                  <div class="box">
+                                    <span class="info">Processing Your Order</span>  
+                                  </div>
+                                  <div class="box">
+                                      <span class="timestamp">2017-07-04 13:23:55</span>
+                                  </div>
+                                </div>
+
+
+                              <div class="boxes">
+                                <div class="box">
+                                  <span class="icon">Delivering Food</span>
+                                </div>
+                                <div class="box">
+                                  <span class="info">Delivering Your Food By <a href="">L</a></span>  
+                                </div>
+                                <div class="box">
+                                    <span class="timestamp">2017-07-04 13:23:55</span>
+                                </div>
+                              </div>
+                              <div class="boxes">
+                                  <div class="box">
+                                    <span class="icon">Food Recieved</span>
+                                  </div>
+                                  <div class="box">
+                                    <span class="info">Customer Recieved Food </span>  
+                                  </div>
+                                  <div class="box">
+                                      <span class="timestamp">2017-07-04 13:23:55</span>
+                                  </div>
+                                </div>
+
+                            </section>
+                            
+
                             <section class="Order-detail">
                             
-                            <article class="Order-detail-food">
+                            <div class="tabs">
+                              <a class="button act-btn">
+                                Reciept
+                              </a>
+                              <a class="button">
+                                Courier
+                              </a>
+                            </div>
+                             
+                            <!-- <article class="Order-detail-food">
 
                               <ul class="detail-food-list">
-                                <li>
+                                
+                                <li class="item-entity">
+  
+                                   <div>
+                                   <h4>Bread Fruit Cheese Sandwich</h4>
+                                   <p>Rp 50.000</p>
+                                   </div>
+                                   
+                                   <p class="total-item">
+                                     X2
+                                   </p>
+
+                                   <p class="total-cost">
+                                    Rp 100.000
+                                   </p>
 
                                 </li>
-                              </ul>
-                            </article>
 
 
-                            <article class="Order-detail-corier row">
+                                <li class="item-entity">
+                                  <div>
+                                  <h4>Bread Fruit Cheese Sandwich</h4>
+                                  <p>Rp 50.000</p>
+                                  </div>
+                                  <p class="total-item">
+                                    X2
+                                  </p>
+                                  <p class="total-cost">
+                                   Rp 100.000
+                                  </p>
+                               </li>
+
+                               <li class="total-cost-recipt">
+                                 <p class="title">Total</p>
+                                 <p class="number">Rp 200.000</p>
+                               </li>
                               
-                              <div class="driver-info col-md-6">
+                              </ul>
+
+                            </article> -->
+
+
+                            <article class="Order-detail-corier">
+                              
+                              <div class="driver-info col-md-4 col-sm-12">
                                   <img src="https://yt3.ggpht.com/-FpoBOVwSiE0/AAAAAAAAAAI/AAAAAAAAAAA/Yf-SnwkfdQ4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="">
                                   <ul>
                                     <li>
-                                      <p class="title">Name</p>
-                                      <p class="data">Lima Beans</p>
+                                      <p >Name</p>
+                                      <h4>Lima Beans</h4>
                                     </li>
                                     <li>
-                                        <p class="title">Vehichle Plate</p>
-                                        <p class="data">B 123 BN</p>
+                                        <p >Vehichle Plate</p>
+                                        <h4>B 34 BB</h4>
                                     </li>
                                     <li>
-                                        <p class="title">Destination</p>
-                                        <p class="data">Addres Here</p>
+                                        <p >Destination</p>
+                                        <h4>Dress Here </h4>
                                     </li>
                                   </ul>
                               </div>
-
-                              <div class="maps col-md-6">
-                                asdqw
-                              </div>
-
+                              <div class="maps col-md-8 col-sm-12" id="map"></div>
+                    
                             </article>
 
                             </section>
 
+                            <!-- button -->
+                            <a href="#" class="genric-btn primary radius finish-order-button">I Recieved My Food</a>
                         </div>
                     </div>
             </div>
@@ -181,22 +279,23 @@
 
 
 
-        <script src="js/vendor/jquery-2.2.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>			
-        <script src="js/easing.min.js"></script>			
-        <script src="js/hoverIntent.js"></script>
-        <script src="js/superfish.min.js"></script>	
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>	
-        <script src="js/owl.carousel.min.js"></script>			
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/jquery.nice-select.min.js"></script>			
-        <script src="js/parallax.min.js"></script>	
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/mail-script.js"></script>				
-        <script src="js/main.js"></script>	
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>	
+			<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>		
+  		<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>			
+			<script src="js/parallax.min.js"></script>	
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+			<script src="js/app.js"></script>	
 
 
         <script>

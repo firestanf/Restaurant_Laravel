@@ -2548,6 +2548,7 @@ body.mobile-nav-active #mobile-nav-toggle{
     left:0;
     width: 100%;
     height:300%;
+    min-width:1000px;
 }
 .filter-btn > i
 {   
@@ -3289,7 +3290,7 @@ min-width: 320px; */
     padding-top:.2em;
     padding-bottom:.2em;
     font-weight:600;
-    
+    margin-top:1em;
 }
 /*checkout*/
 .content-about

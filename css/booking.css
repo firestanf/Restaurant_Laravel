@@ -395,7 +395,7 @@
 }
 .Order-detail
 {
-  border:1px solid red;
+  width:80%;
 }
 .Order-detail > .tabs-body
 {
@@ -408,15 +408,74 @@
 }
 .detail-food-list > li
 {
-
+  display:flex;
+  align-items: center;
+  width:100%;
 }
+.detail-food-list > li > .img-fluid
+{
+  width:auto;
+  height:125px;
+}
+.detail-food-list > li > div
+{
+  Border:1px solid red;
+}
+.detail-food-list > li > div > *
+{
+  margin:0;
+}
+.detail-food-list > li > .total-item
+{
+  Border:1px solid red;
+  font-size:1.5em;
+  padding:0 .5em;
+  margin:0;
+  font-weight:600;
+}
+.detail-food-list > li > .total-cost
+{
+  Border:1px solid red;
+  padding:0 .5em;
+  font-weight:500;
+  margin:0;
+}
+.detail-food-list > .total-cost-recipt
+{
+  overflow: hidden;
+  display:block;
+  
+}
+.detail-food-list > .total-cost-recipt > .title
+{ 
+  color:black;
+  font-weight:600;
+  float:left;
+  font-size:1.3em;
+  padding-top:.5em;
+  padding-bottom:1em;
+  Border:1px solid red;
+}
+.detail-food-list > .total-cost-recipt > .number
+{ color:black;
+  font-weight:500;
+  font-size:1.3em;
+  padding-top:.5em;
+  padding-bottom:1em;
+  float:right;
+  Border:1px solid red;
+}
+
 .Order-detail-corier
 {
-
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:.5em;
 }
 .Order-detail-corier > .driver-info
 {
-  Border:1px solid red;
+
+  
 }
 .Order-detail-corier > .driver-info > ul >li
 {
@@ -425,15 +484,9 @@
 .driver-info > ul >li >p
 {
   margin:0;
-}
-.driver-info > ul >li >.title
-{
-
-}
-.driver-info > ul >li >.data
-{
   
 }
+
 
 .Order-detail-corier > .driver-info > img
 {
@@ -441,8 +494,64 @@
 }
 .Order-detail-corier > .maps
 {
-  Border:1px solid red;
+
+  padding-left:0;
 }
 
+/*Tabs*/
+.tabs
+{
+  Border-bottom:1px solid rgb(230, 230, 230);
+  line-height:2.9em;
+}
+.tabs > .button
+{
+  
+  font-size:1.1em;
+  font-weight:500;
 
+  padding:.6em 2em;
+  cursor: pointer;
+}
+.tabs >.act-btn
+{
+  border-bottom:2px solid #f42f2c;
+}
+/*Tabs*/
+.order-log > .boxes
+{
+  display:table;
+}
+.order-log > .boxes > .box {
+  display: table-cell;
+  text-align: center;
+  vertical-align:middle;
+  line-height: 3em;
+  Border:1px solid transparent;
+  padding-left:2px;
+  padding-right:2px;
+}
+.order-log > .boxes > .box > .icon {
+  border:1px solid red;
+  border-radius: 3px;
+  padding:.3em;
+  font-size:.9em;
+}
+.order-log > .boxes > .box > .info {
+  font-weight:300;
+}
+.order-log > .boxes > .box > .timestamp {
+  font-weight:500;
+}
+@media (max-width: 780px) {
+  .order-log > .boxes > .box {
+      display: block;
+      text-align: unset;
+      width: 100%;
+  }
+}
+.finish-order-button
+{
+margin-top:.5em;
+}
 /*Order Info*/
