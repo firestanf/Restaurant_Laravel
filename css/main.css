@@ -1613,30 +1613,9 @@ h1,h2,h3,h4,h5,h6{
     white-space:nowrap
 }
 
-.nav-menu .testnotif .notif-only-web-full-test
-{
-    min-width:300px;
-    padding-top:1em;
-    padding-left:1em;
-    padding-bottom:1em;
-    right:50px;
-}
-.testnotif .see-all-btn
-{
- margin-top:.5em;
-}
-.testnotif .see-all-btn >.genric-btn
-{
-    width:100%;
-    line-height: 1em;
-    font-size:1.08em;
-    padding:.5em 0;
-}
-.notif-only-web-full-test .notif-title
-{
-    margin-bottom:.2em;
-    margin-top:.2em;
-}
+
+
+
 /* .nav-menu>li{
     float:left;
     Border:1px solid transparent;
@@ -1807,16 +1786,7 @@ h1,h2,h3,h4,h5,h6{
     overflow-y:auto;
     transition:0.4s
 }
-#mobile-nav .testnotif
-{
- display:flex;
- align-items: center;
-}
-#mobile-nav .testnotif > i
-{
-    left:unset;
 
-}
 #mobile-nav ul{
     padding:0;
     margin:0;
@@ -2954,27 +2924,7 @@ min-width: 320px; */
 
 /*AUTH */
 
-/* nav v2 */
-.testnotif
-{
-}
 
-.testnotif > i
-{
-    border:1px solid black !important;
-    margin-left:-.5em;
-    
-}
-.testnotif > .title,.symblo
-{
-    color:#f32f2b;
-    font-weight:600;
-}
-.testnotif >.notif-only-web-full
-{
-    
-}
-/* nav v2 */
 
 /*user board*/
 .user-board
@@ -3081,33 +3031,33 @@ min-width: 320px; */
     margin-left:.5em;
     margin-right:.5em;
 }
-.mycart-body > .cart-content
+ .cart-content
 {
     border:1px solid red; 
     margin-left:1em;
     margin-right:1em;
 }
-.mycart-body > .cart-content >.cart-data
+ .cart-content >.cart-data
 {
     border:1px solid blue; 
     display:inline-flex;
     align-items:center;
     width:100%;
 }
-.mycart-body > .cart-content >.cart-data >.product-des> .product-name
+.cart-content >.cart-data >.product-des> .product-name
 {
     margin:0; 
     font-weight:500;
 }
-.mycart-body > .cart-content >.cart-data .product-adddel
+.cart-content >.cart-data .product-adddel
 {
     display:flex !important;
 }
-.mycart-body > .cart-content >.cart-data >.product-des>.product-price
+.cart-content >.cart-data >.product-des>.product-price
 {
     margin: 0;
 }
-.mycart-body > .cart-content >.cart-data .product-remove >.genric-btn
+ .cart-content >.cart-data .product-remove >.genric-btn
 {
     width:35px;
     height:35px;
@@ -3258,8 +3208,8 @@ min-width: 320px; */
     margin-top: 0px;
     margin-bottom: 0px;
     bottom:2em;
-    max-width:380px;
-    height:150%;
+    max-width:400px;
+
 }
 
 .total-checkout-body .title
@@ -3303,4 +3253,8 @@ min-width: 320px; */
     margin:1em 0;
     font-size:1.1em;
     font-weight:300;
+}
+.address > .maps 
+{
+    height:100%;
 }
