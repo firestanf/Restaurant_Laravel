@@ -10,8 +10,42 @@
     margin-left:25%;
     margin-right:25%;
 }
+.booking-input > .pick-date
+{
+  line-height: 1em;
+}
+.booking-input > .pick-date >  .date-Show
+{
+  border:1px solid #d0d0d0;
+  font-size:1.2em;
+  margin:0;
+  padding-left:1em;
+  padding-right:1em;
+  padding-top:.7em;
+  padding-bottom:.7em;
+  font-weight: 400;
+  cursor: pointer;
 
+}
+.booking-input > .pick-date >  .date-Show > i
+{
+  float:right;
+}
 
+.booking-input > .pick-date > .title
+,.booking-input > .pick-num-people > .title
+{
+
+  margin:0;
+  font-size:1em;
+  font-weight:500;
+  margin-bottom: .5em;
+}
+.booking-input >.pick-num-people >.default-select > select
+{
+  width:100%;
+  Border:1px solid red;
+}
 /*calendar v1*/
 
 .month {
@@ -89,10 +123,6 @@
     color:blue;
   }
 
-.pick-date
-{
-
-}
   .pick-time  .input-range
   {
     border: 1px solid red;
@@ -408,9 +438,14 @@
 }
 .detail-food-list > li
 {
-  display:flex;
+
   align-items: center;
   width:100%;
+}
+.detail-food-list >.item-entity
+{
+  display:grid;
+  grid-template-columns: 74.1% 1fr 2fr;
 }
 .detail-food-list > li > .img-fluid
 {
@@ -419,7 +454,7 @@
 }
 .detail-food-list > li > div
 {
-  Border:1px solid red;
+  /* Border:1px solid red; */
 }
 .detail-food-list > li > div > *
 {
@@ -427,7 +462,7 @@
 }
 .detail-food-list > li > .total-item
 {
-  Border:1px solid red;
+  /* Border:1px solid red; */
   font-size:1.5em;
   padding:0 .5em;
   margin:0;
@@ -435,7 +470,7 @@
 }
 .detail-food-list > li > .total-cost
 {
-  Border:1px solid red;
+  /* Border:1px solid red; */
   padding:0 .5em;
   font-weight:500;
   margin:0;
@@ -512,6 +547,7 @@
 
   padding:.6em 2em;
   cursor: pointer;
+  width:100%;
 }
 .tabs >.act-btn
 {
@@ -532,7 +568,7 @@
   padding-right:2px;
 }
 .order-log > .boxes > .box > .icon {
-  border:1px solid red;
+  border:1px solid #f32f2b; 
   border-radius: 3px;
   padding:.3em;
   font-size:.9em;
