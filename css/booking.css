@@ -313,7 +313,7 @@
 /*checked hamb*/
 .profile-edit 
 {
-  Border:1px solid red;
+  /* Border:1px solid red; */
   margin-top:.2em;
 }
 .profile-edit > .img-section
@@ -335,7 +335,7 @@
 
 .profile-edit > .text-body
 {
-  Border:1px solid red;
+  /* Border:1px solid red; */
   /* display:flex; */
   line-height:1em;
 }
@@ -355,7 +355,6 @@
 {
   float:left;
   /* width:60%!important; */
-  Border:1px solid;
   overflow:hidden;
 }
 .profile-edit > .text-body .text-content >.genric-btn
